@@ -1,0 +1,13 @@
+<zk>
+  <borderlayout hflex="1" vflex="1" id="borderlayout1">
+    <north height="150px" border="none">
+        <include src="/layout/banner.zul" />
+    </north>
+    <center id="mainContent" autoscroll="true" border="none" 
+        self="@insert(content)">
+    </center>
+    <south height="50px" border="none">
+      <include src="/layout/footer.zul" />
+    </south>
+  </borderlayout>
+</zk>

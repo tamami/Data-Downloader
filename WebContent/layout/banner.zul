@@ -1,0 +1,16 @@
+<?link rel="stylesheet" type="text/css" href="/style.css" ?>
+<div hflex="1" vflex="1" sclass="banner">
+  <hbox hflex="1" vflex="1" align="center">
+    <a href="http://brebeskab.go.id/">
+      <image src="/images/logo_kecil.png" width="90px" />
+    </a>
+    <div width="400px">
+      <vbox>
+        <label value="PEMERINTAH KABUPATEN BREBES" sclass="head2" />
+        <label value="DINAS PENDAPATAN DAN PENGELOLAAN KEUANGAN" sclass="head2" />
+        <label value="Aplikasi Pengunduh Data SISMIOP Untuk BPD" sclass="head1" />
+      </vbox>
+    </div>
+    
+  </hbox>
+</div>

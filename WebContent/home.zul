@@ -1,0 +1,27 @@
+<vbox hflex="1" vflex="1" align="center" pack="center"
+    apply="org.zkoss.bind.BindComposer"
+    viewModel="@id('home_vm') @init('lab.aikibo.viewmodel.HomeModel')">
+  <grid>
+    <columns>
+      <column width="150px"/>
+      <column />
+    </columns>
+    <rows>
+      <row>
+        TAHUN PAJAK
+        <textbox cols="4" constraint="/\d{4}/: Isikan dengan 4 digit tahun potensi" 
+            value="@bind(home_vm.thnPajak)"/>
+      </row>
+      <row>
+        TANGGAL PERUBAHAN
+        <datebox value="@bind(home_vm.tglPerubahan)"/>
+      </row>
+      <row>
+        KODE PENCETAK
+        <textbox cols="9" constraint="/\d{9}/: Isikan dengan 9 digit kode user" 
+        	value="@bind(home_vm.kodePencetak)"/>
+      </row>
+    </rows>
+  </grid>
+  <button label="Ambil Data" onClick="@command('unduhFile')"/>
+</vbox>

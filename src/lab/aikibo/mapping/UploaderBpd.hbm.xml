@@ -1,0 +1,29 @@
+<?xml version="1.0" ?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+  <class name="lab.aikibo.entity.UploaderBpd" table="UPLOADER_BPD">
+    <composite-id>
+      <key-property name="nop" column="NOP" type="string" />
+      <key-property name="thnPajak" column="THN_PAJAK_SPPT" type="string" />
+    </composite-id>
+    <property name="kode" type="string">
+      <column name="KODE" />
+    </property>
+    <property name="namaWp" type="string">
+      <column name="NM_WP_SPPT" />
+    </property>
+    <property name="pbb" type="big_decimal">
+      <column name="PBB" />
+    </property>
+    <property name="denda" type="big_decimal">
+      <column name="DENDA" />
+    </property>
+    <property name="tglTerbit" type="date">
+      <column name="TGL_TERBIT_SPPT" />
+    </property>
+    <property name="nipPencetak" type="string">
+      <column name="NIP_PENCETAK" />
+    </property>
+  </class>
+</hibernate-mapping>
